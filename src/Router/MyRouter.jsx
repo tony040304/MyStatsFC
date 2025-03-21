@@ -1,17 +1,23 @@
 import React from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router';
-import Inicio from '../Commponents/Inicio/Inicio';
-import MiEquipo from '../Commponents/Equipo/MiEquipo';
-import Partidos from '../Commponents/Partidos/Partidos';
-import VerJugadores from '../Commponents/Equipo/EquipoPages/VerJugadores';
+import Inicio from '../Components/Inicio/Inicio';
+import MiEquipo from '../Components/Equipo/MiEquipo';
+import Partidos from '../Components/Partidos/Partidos';
+import VerJugadores from '../Components/Equipo/EquipoPages/VerJugadores';
+import NuevoFichaje from '../Components/Equipo/EquipoPages/NuevoFichaje';
+import EditarEquipo from '../Components/Equipo/EquipoPages/EditarEquipo';
+
 
 const MyRouter = () => {
   return (
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Inicio />} />
+
         <Route path="/equipo" element={<MiEquipo />} />
-        <Route path="/verJugadores" element={<VerJugadores />} />
+        <Route path="/verJugadores" element={<VerJugadores />} /> 
+        <Route path="/nuevoFichaje" element={<NuevoFichaje />} />
+        <Route path="/editarEquipo" element={<EditarEquipo />} />
         <Route path="/partidos" element={<Partidos />} />
       </Routes>
     </BrowserRouter>
