@@ -1,11 +1,11 @@
 import './App.css'
-import Inicio from './Commponents/Inicio/Inicio'
+import MyRouter from './Router/MyRouter'
 
 function App() {
 
   return (
     <>
-      <Inicio />
+      <MyRouter />
     </>
   )
 }
